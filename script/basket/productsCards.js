@@ -1,6 +1,6 @@
 const pathImages = 'images';
 const pathFeatured = `${pathImages}/featured`;
-const featuredItemsEl= document.querySelector('.goods-list');
+const featuredItemsEl = document.querySelector('.goods-list');
 
 /**
  * Эта функция принимает один из объектов из массива products в файле productsArray.js.
@@ -12,12 +12,15 @@ function getProduct(product) {
 	<div class='goods-item'>
 		<div class='goods-imgWrap'>
 			<img class='goods-img' src='${pathFeatured}/${product.image}' alt='${product.title}'>
-				<div class='doods-bgDark'></div>
+			<div class='goods-bgDark'></div>
 		</div>
 
-		<h3 class='goods-title'>${product.title}</h3>
-		<p class='goods-price'>${product.price}</p>
-		<button class='goods-btn' data-productId="${product.id}">Добавить</button>
+		<div class='goods-cardBottom'>
+				<h3 class='goods-title'>${product.title}</h3>
+				<p class='goods-price'>$<span>${product.price}</span></p>
+				<button class='goods-btn' data-productId='${product.id}'>Добавить</button>
+		</div>
+		
 	</div>
 	`;
 }
