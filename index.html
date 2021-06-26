@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>eShop</title>
+	<link rel='stylesheet' href='css/style.css'>
+</head>
+<body>
+<div class='grid-wrapper'>
+	<header>
+		<div class='container cart-wrapper'>
+			<span class='cart-iconWrap'>
+				<img class='cart-icon' src='images/cart.png' alt=''>
+				<span>0</span>
+			</span>
+			<div class='basket hidden'>
+				<div class='basket-row basket-header'>
+					<div>Название товара</div>
+					<div>Количество</div>
+					<div>Цена за шт.</div>
+					<div>Итого</div>
+				</div>
+
+				<div class='basket-total'>
+					Товаров в корзине на сумму:
+					$<span class='basket-total-value'>0</span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class='products-wrap container'>
+			<h2 class='products-top products-title'>Products</h2>
+			<p class='products-top products-subtitle'>Shop for items based on what we featured in this week</p>
+			<div class='goods-list goods-grid'></div>
+		</div>
+	</main>
+	<footer>
+		<div class='container greed-footer'>
+			&copy; 2021 My basket project.
+		</div>
+	</footer>
+</div>
+
+<script src='script/basket/productDTO.js'></script>
+<script src='script/basket/productsArray.js'></script>
+<script src='script/basket/productsCards.js'></script>
+<script src='script/basket/basket.js'></script>
+<script src='script/app.js'></script>
+</body>
+</html>
